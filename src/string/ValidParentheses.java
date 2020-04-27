@@ -26,15 +26,15 @@ Input: "{[]}"
 Output: true
 */
 
-import java.util.Scanner;
+package string;
+
 import java.util.Stack;
 
 public class ValidParentheses
 {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner(System.in);
-        String s = in.next();
+        String s = "([)]";
         System.out.println(isValid(s));
     }
 

@@ -14,6 +14,8 @@ Explanation: There is no common prefix among the input strings.
 Note: All given inputs are in lowercase letters a-z.
  */
 
+package string;
+
 public class LongestCommonPrefix
 {
     public static void main(String[] args)
@@ -45,7 +47,7 @@ public class LongestCommonPrefix
                 }
             }
 
-            if(matching == true)
+            if(matching)
             {
                 common = common + c;
                 index++;

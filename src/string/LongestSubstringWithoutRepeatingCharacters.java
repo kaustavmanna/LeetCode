@@ -18,21 +18,21 @@ Explanation: The answer is "wke", with the length of 3.
 Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
 */
 
-import java.util.HashSet;
-import java.util.Scanner;
+package string;
 
-public class LongestUniqueSubstring
+import java.util.HashSet;
+
+public class LongestSubstringWithoutRepeatingCharacters
 {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner(System.in);
-        String s = in.next();
+        String s = "abcabcbb";
         System.out.println("Maximum length of unique substring: " + findlongesetuniquesubstring(s));
     }
 
     public static int findlongesetuniquesubstring(String s)
     {
-        HashSet<Character> hashSet = new HashSet<Character>();
+        HashSet<Character> hashSet = new HashSet<>();
         int max_length = 0;
         int j = 0;
 

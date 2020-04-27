@@ -45,16 +45,15 @@ Output: 1994
 Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 */
 
+package string;
+
 import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
 
 public class RomanToInteger
 {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner(System.in);
-        String s = in.next();
+        String s = "IX";
         System.out.println("Roman " + s + " to Integer is: " + romantointeger(s));
     }
 

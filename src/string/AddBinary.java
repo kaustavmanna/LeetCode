@@ -16,6 +16,8 @@ Each string consists only of '0' or '1' characters.
 Each string is either "0" or doesn't contain any leading zero.
 */
 
+package string;
+
 public class AddBinary
 {
     public static void main(String[] args)
@@ -30,8 +32,7 @@ public class AddBinary
         int b_index = b.length() - 1;
 
         String result = "";
-        int digit_1 = 0;
-        int digit_2 = 0;
+        int digit_1, digit_2;
         int cf = 0;
 
         while(a_index >= 0 || b_index >= 0)
