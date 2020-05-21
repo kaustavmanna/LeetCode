@@ -1,4 +1,4 @@
-/*
+package linkedlist;/*
 You are given two non-empty linked lists representing two non-negative integers.
 The digits are stored in reverse order and each of their nodes contain a single digit.
 Add the two numbers and return it as a linked list.
@@ -10,16 +10,18 @@ Output: 7 -> 0 -> 8
 Explanation: 342 + 465 = 807.
 
 Definition for singly-linked list.
-public class ListNode
+public class standard.ListNode
 {
     int val;
-    ListNode next;
-    ListNode(int x)
+    standard.ListNode next;
+    standard.ListNode(int x)
     {
         val = x;
     }
 }
 */
+
+import standard.ListNode;
 
 public class AddTwoNumbers
 {
@@ -42,7 +44,8 @@ public class AddTwoNumbers
         trav.next = new ListNode(4);
         trav = trav.next;
 
-        trav = addTwoNumbers(l1, l2);
+        AddTwoNumbers add = new AddTwoNumbers();
+        trav = add.addTwoNumbers(l1, l2);
         while(trav != null)
         {
             System.out.print(trav.val + " ");
@@ -50,7 +53,7 @@ public class AddTwoNumbers
         }
     }
 
-    public static ListNode addTwoNumbers(ListNode l1, ListNode l2)
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2)
     {
         int cf = 0;
         ListNode result = null;

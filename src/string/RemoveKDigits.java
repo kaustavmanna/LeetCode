@@ -1,4 +1,4 @@
-/*
+package string;/*
 Given a non-negative integer num represented as a string, remove k digits from the number so that the new number is the smallest possible.
 
 Note:
