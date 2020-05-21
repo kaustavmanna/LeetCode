@@ -13,6 +13,8 @@ Given binary tree [3,9,20,null,null,15,7],
 return its depth = 3.
 */
 
+import standard.TreeNode;
+
 public class MaximumDepthOfBinaryTree
 {
     public static void main(String[] args)

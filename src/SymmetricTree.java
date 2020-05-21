@@ -17,6 +17,8 @@ But the following [1,2,2,null,3,null,3] is not:
 Follow up: Solve it both recursively and iteratively.
 */
 
+import standard.TreeNode;
+
 public class SymmetricTree
 {
     public static void main(String[] args)

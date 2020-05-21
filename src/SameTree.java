@@ -31,7 +31,7 @@ Input:   1         1
 Output: false
  */
 
-import com.sun.source.tree.Tree;
+import standard.TreeNode;
 
 public class SameTree
 {
