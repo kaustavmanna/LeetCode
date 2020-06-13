@@ -27,12 +27,31 @@ public class CellsWithOddValuesInAMatrix
 {
     public static void main(String[] args)
     {
-
+        CellsWithOddValuesInAMatrix matrix = new CellsWithOddValuesInAMatrix();
+        System.out.println(matrix.oddCells(2, 3, new int[][] {{0, 1}, {1, 1}}));
     }
 
-    public static int oddCells(int n, int m, int[][] indices)
+    public int oddCells(int n, int m, int[][] indices)
     {
         int count = 0;
+        int[] row_count = new int[n];
+        int[] col_count = new int[m];
+
+        for(int[] index:indices)
+        {
+            row_count[index[0]]++;
+            col_count[index[1]]++;
+        }
+
+        for(int i = 0; i < n; i++)
+        {
+            for(int j = 0; j < m; j++)
+            {
+                if((row_count[i] + col_count[j]) % 2 != 0)
+                    count++;
+            }
+        }
+
         return count;
     }
 }

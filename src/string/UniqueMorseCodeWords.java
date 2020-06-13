@@ -25,6 +25,27 @@ words[i] will only consist of lowercase letters.
 
 package string;
 
+import java.util.HashSet;
+
 public class UniqueMorseCodeWords
 {
+    public static void main(String[] args)
+    {
+        UniqueMorseCodeWords uniqueMorse = new UniqueMorseCodeWords();
+        System.out.println(uniqueMorse.uniqueMorseRepresentations(new String[] {"gin", "zen", "gig", "msg"}));
+    }
+
+    public int uniqueMorseRepresentations(String[] words)
+    {
+        String[] morsecodes = new String[] {".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."};
+        HashSet<String> hashSet = new HashSet<>();
+        for (String word : words)
+        {
+            StringBuilder stringBuilder = new StringBuilder();
+            for (int j = 0; j < word.length(); j++)
+                stringBuilder.append(morsecodes[word.charAt(j) - 'a']);
+            hashSet.add(stringBuilder.toString());
+        }
+        return hashSet.size();
+    }
 }
