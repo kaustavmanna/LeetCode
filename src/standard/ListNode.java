@@ -1,3 +1,5 @@
+/* Definition for singly-linked list. */
+
 package standard;
 
 public class ListNode
@@ -5,9 +7,16 @@ public class ListNode
     public int val;
     public ListNode next;
 
-    public ListNode(int x)
+    public ListNode() {}
+
+    public ListNode(int val)
     {
-        val = x;
-        next = null;
+        this.val = val;
+    }
+
+    public ListNode(int val, ListNode next)
+    {
+        this.val = val;
+        this.next = next;
     }
 }
